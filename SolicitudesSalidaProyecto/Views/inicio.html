@@ -1,0 +1,75 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<script src="./js/jquery-3.1.1.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+
+		<link rel="icon" href="/img/favicon.PNG" type="image/x-icon"/>
+
+		<title>Sistema de Solicitudes de Salidas</title>
+
+		<style>
+		body {
+			padding-top: 15px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="text-center">
+				<!--Banner de la UABC-->
+				<div class="row">
+					<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+						<img src="/img/UABC.PNG" height="110">
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h1 style="color:#017141">Sistema de Solicitud de Salidas</h1>						
+						<h3 style="color:#017141">Facultad de Ingeniería Arquitectura y Diseño</h3>
+					</div>
+					<div class="hidden-xs hidden-sm col-md-2 col-lg-2">
+						<img src="/img/FIAD.png" height="110">
+					</div>
+				</div>				
+				<hr>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<h3>Menu</h3>
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Cabrera Ortega Jesus Efren
+					<br>
+					<button id="myButton" type="button" class="btn btn-link"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Ver Notificaciones <span class="badge">2</span></button>
+					<br>
+					<button id="myButton" type="button" class="btn btn-link"><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Solicitudes relizadas</button>
+					<br>
+					<button id="myButton" type="button" class="btn btn-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Generar nueva solicitud</button>
+					<br>
+					<button id="myButton" type="button" class="btn btn-link"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Historial de solicitudes</button>
+					<br>
+					<button id="AgregarUsurio" type="button" class="btn btn-link"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Administrar usuarios académicos</button>
+					<br>
+					<button id="myButton" type="button" class="btn btn-link"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Ayuda</button>
+					<br>
+					<button id="CerrarSesion" type="button" class="btn btn-link"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Cerrar Sesión</button>
+				</div>
+				<div class="col-sm-9 col-md-9 col-lg-9">
+					<h3>Bienvenido al Sistema de Solicitudes de Salida</h3>
+
+				</div>
+			</div>
+
+		</div>
+		<footer class="container-fluid text-center">
+  			<p>Universidad Autómoa de Baja California 2017. Diseñado por ©Leyvus.</p>
+		</footer>
+	</body>
+	<script type="text/javascript">
+	    document.getElementById("AgregarUsurio").onclick = function () {
+	        location.href = "/usuario.html";
+    	};
+    	document.getElementById("CerrarSesion").onclick = function () {
+	        location.href = "/index.html";
+    	};
+	</script>
+</html>
